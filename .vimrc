@@ -1,3 +1,5 @@
+" Make Vim support python tab
+autocmd FileType python setlocal et sta sw=4 sts=4
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
