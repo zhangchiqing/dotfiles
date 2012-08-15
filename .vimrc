@@ -1,5 +1,6 @@
 " Make Vim support python tab
 autocmd FileType python setlocal et sta sw=4 sts=4
+autocmd FileType html setlocal et sta sw=4 sts=4
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -41,7 +42,10 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
 " Show “invisible” characters
 " set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 " set list
