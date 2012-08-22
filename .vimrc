@@ -1,3 +1,12 @@
+" Prevent ominifunc is not set issue
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
+
 " Make Vim support python tab
 autocmd FileType python setlocal et sta sw=4 sts=4
 autocmd FileType html setlocal et sta sw=4 sts=4
@@ -104,6 +113,12 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
+" Hide MacVim's ToolBar
 if has("gui_running")
     set guioptions=egmrt
 endif
+
+" Set Path for searching file
+set path=~/aa/**
+
+
